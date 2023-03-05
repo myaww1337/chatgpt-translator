@@ -11,7 +11,7 @@ Python:
 ```python
 import chatgpt_translator as Translator # Copy 'chatgpt_translator.py' from this repository inside your project
 
-print(Translator.Translate(source_text = "Hello, how are you?", awaited_lang = "Russian", token = "sk-...")) # Привет, как дела?
+print(Translator.Translate(source_text = "Hello, how are you?", awaited_lang = "Russian", token = "sk-...")["translated_text"]) # Привет, как дела?
 ```
 
 Other programming languages:
