@@ -18,6 +18,11 @@ Java:
 ```java
 import org.json.JSONObject;
 
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
+
 public static void main(String[] args) throws IOException {
         String api = "https://chatgpttranslator.netrumnetrum.repl.co/translate";
         URLConnection connection = new URL(String.format("%s?text=%s&awaited_lang=%s&token=%s",
