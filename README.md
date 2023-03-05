@@ -14,7 +14,27 @@ import chatgpt_translator as Translator # Copy 'chatgpt_translator.py' from this
 print(Translator.Translate(source_text = "Hello, how are you?", awaited_lang = "Russian", token = "sk-...")) # Привет, как дела?
 ```
 
-Java:
+Other programming languages:
+
+To translate text in other languages, you need to send **GET** request to [server hosted on replit](https://chatgpttranslator.netrumnetrum.repl.co/translate)
+
+There 3 required parameters:
+- ``text`` - Raw text
+- ``awaited_lang`` - Language for translation, for example: English, or Russian
+- ``token`` - OpenAI API token
+
+If everything is ok, you will get same response:
+
+```json
+{
+        "source_text": "Hello, how are you?",
+        "translated_text": "Привет, как дела?",
+        "awaited_lang": "ru"
+}
+```
+
+Here example in Java:
+
 ```java
 import org.json.JSONObject;
 
